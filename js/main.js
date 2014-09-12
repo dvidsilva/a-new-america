@@ -14,11 +14,11 @@ dp(document).ready(function() {
         dp('.fitvids').fitVids();
     }
     //BIG SLIDE
-    dp('#home-slide').superslides({
-        animation: 'fade', // You can choose either fade or slide
-        play: 6000,
-        pagination: false
-    });
+//    dp('#home-slide').superslides({
+//        animation: 'fade', // You can choose either fade or slide
+//        play: 6000,
+//        pagination: false
+//    });
     //SERVICES SLIDER
     dp("#slider-services").sudoSlider({
         speed: 650,

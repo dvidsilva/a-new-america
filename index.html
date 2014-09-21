@@ -3,8 +3,8 @@
 
 <head>
     <!-- PACE Loader -->
-    <script src="./js/lib/pace.min.js"></script>
-    <link href="./css/lib/pace.css" rel="stylesheet">
+    <script src="js/lib/pace.min.js"></script>
+    <link href="css/lib/pace.css" rel="stylesheet">
     <!-- END PACE Loader -->
 
     <meta charset="utf-8">
@@ -17,35 +17,130 @@
     <title>Garis Creative Agency Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome CSS -->
-    <link href="./css/lib/font-awesome.css" rel="stylesheet">
+    <link href="css/lib/font-awesome.css" rel="stylesheet">
     <!-- Zocial CSS -->
-    <link href="./css/lib/zocial.css" rel="stylesheet">
+    <link href="css/lib/zocial.css" rel="stylesheet">
     <!-- Nivo Lightbox CSS -->
-    <link href="./css/lib/nivo-lightbox.css" rel="stylesheet">
-    <link href="./css/lib/nivo-themes/default/default.css" rel="stylesheet"  />
+    <link href="css/lib/nivo-lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/lib/nivo-themes/default/default.css" type="text/css" />
     <!-- STYLE CSS -->
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <!-- Color Scheme CSS -->
-    <link href="./css/scheme/blue.css" rel="stylesheet">
+    <link href="css/scheme/blue.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="./js/html5shiv.js"></script>
-      <script src="./js/respond.min.js"></script>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
     <![endif]-->
 </head>
 
-<body data-spy="scroll" ng-app>
+<body data-spy="scroll">
     <div id="loader"></div>
     <div id="main-wrapper">
-        <div id="sidebar" data-ng-include="'./navigation.html'"></div>
+        <div id="sidebar">
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" alt="logo garis">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a class="sscroll" href="#home">Home</a>
+                          </li>
+                          <li><a class="sscroll" href="#services">Services</a>
+                          </li>
+                          <li><a class="sscroll" href="#about">About Us</a>
+                          </li>
+                          <li><a class="sscroll" href="#how">How it works</a>
+                          </li>
+                          <li><a class="sscroll" href="#portfolio">Portfolio</a>
+                          </li>
+                          <li><a class="sscroll" href="#resources">Resources</a>
+                          </li>
+                          <li><a class="sscroll" href="#get">Get Involved</a>
+                          </li>
+                          <li><a class="sscroll" href="#contact">Contact</a>
+                          </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+
+
+        </div>
         <div id="container">
-           
             <!-- BEGIN HOME -->
-            <section id="home" class="home" data-ng-include="'./home.html'"></section>
-            <!-- BEGIN SERVICES -->
+            <section id="home" class="home">
+                <div id="home-slide">
+                  <ul class="slides-container text-center">
+                    <li>
+                      <div class="slide-text">
+                        <h2>AnewAmerica CDFI</h2>
+                        <span>Creating Financial Solutions for Evolving Local Communities</span>
+                        <br/>
+                      </div>
+                      <div class="slide-filter"></div>
+                      <div style="background-image: url('./assets/images/homebg1.png');" class="bg-parallax parallaxize"></div>
+                    </li>
+                    <li>
+                      <div class="slide-text">
+                        <h2>Get Involved</h2>
+                        <span>Email volunteer@anewamerica.org and start making a difference in your community!</span>
+                        <br/>
+                      </div>
+                      <div class="slide-filter"></div>
+                      <div style="background-image: url('./assets/images/homebg2.png');" class="bg-parallax parallaxize"></div>
+                    </li>
+                    <li>
+                      <!-- Slide -->
+                      <div class="slide-text">
+                        <h2>Give Today</h2>
+                        <span>Be a part of the solution.</span>
+                        <br/>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                          <input type="hidden" name="cmd" value="_s-xclick">
+                          <input type="hidden" name="hosted_button_id" value="LJ5ZAJ5ZPF3NS">
+                          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                      </div>
+                      <div class="slide-filter"></div>
+                      <div style="background-image: url('./assets/images/homebg3.png');" class="bg-parallax parallaxize"></div>
+                    </li>
+                  </ul>
+                  <nav class="slides-navigation slidez">
+                    <a href="javascript:;" class="next">
+                      <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="javascript:;" class="prev">
+                      <i class="fa fa-angle-left"></i>
+                    </a>
+                  </nav>
+                  <script>
+                    dp(document).ready(function () {
+                      dp('#home-slide').superslides({
+                        animation: 'fade', // You can choose either fade or slide
+                        play: 6000,
+                        pagination: false
+                      });
+                    });
+                  </script>
+                </div>
+            </section>
+            <!-- END HOME -->
             <section id="services" class="services">
                 <div class="row">
                     <div class="col-md-12">
@@ -614,45 +709,32 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- Jquery Source -->
-    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
     <!-- Nivo Light Box Source -->
-    <script src="./js/lib/nivo-lightbox.min.js"></script>
+    <script src="js/lib/nivo-lightbox.min.js"></script>
     <!-- Bootstrap Source -->
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- Superslides Source -->
-    <script src="./js/lib/jquery.superslides.min.js"></script>
+    <script src="js/lib/jquery.superslides.min.js"></script>
     <!-- Smoothscroll Source -->
-    <script src="./js/lib/smoothscroll.js"></script>
+    <script src="js/lib/smoothscroll.js"></script>
     <!-- Sudo Slider Source -->
-    <script src="./js/lib/jquery.sudoslider.min.js"></script>
+    <script src="js/lib/jquery.sudoslider.min.js"></script>
     <!-- Mixitup Source -->
-    <script src="./js/lib/jquery.mixitup.min.js"></script>
+    <script src="js/lib/jquery.mixitup.min.js"></script>
     <!-- Back to Top Source -->
-    <script src="./js/lib/jquery.backtotop.js"></script>
+    <script src="js/lib/jquery.backtotop.js"></script>
     <!-- Backstretch Source -->
-    <script src="./js/lib/jquery.backstretch.min.js"></script>
+    <script src="js/lib/jquery.backstretch.min.js"></script>
     <!-- CarouFredSel Source -->
-    <script src="./js/lib/jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script src="js/lib/jquery.carouFredSel-6.2.1-packed.js"></script>
     <!-- Mobile Responsive Javascript -->
-    <script src="./js/lib/jquery.mobileresponsive.js"></script>
+    <script src="js/lib/jquery.mobileresponsive.js"></script>
     <!-- Google Map Source -->
-    <script src="./js/lib/gmap3.min.js"></script>
+    <script src="js/lib/gmap3.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
     <!-- Main Action Javascript -->
-    <script src="./bower_components/angular/angular.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-54500704-1', 'auto');
-  ga('send', 'pageview');
-  setTimeout(function(){_gaq.push(['_trackEvent', 'Control', 'Bounce Rate', ''])}, 50000);
-
-</script> 
 
 </html>

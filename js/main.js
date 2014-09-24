@@ -19,6 +19,11 @@ dp(document).ready(function() {
         play: 6000,
         pagination: false
     });
+    dp('#getinvolved').superslides({
+        animation: 'fade', // You can choose either fade or slide
+        play: 6000,
+        pagination: false
+    });
     //SERVICES SLIDER
     dp("#slider-services").sudoSlider({
         speed: 650,

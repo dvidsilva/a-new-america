@@ -731,8 +731,21 @@
 </script>
 
 <script>
-$(function(){
+$( document ).ready(function() {
+$('#portfolio .col-md-3').off('click').click(function() { 
 
+ var current = $(this).find('img');   
+ if(current.attr('src').match(/_2/)){
+current.attr('src',  (current.attr('src').replace('_2', '') ) );
+
+}else{
+
+current.attr('src',  (current.attr('src').replace('.png', '') )  + '_2.png');
+}
+
+
+} );
+}
 </script>
 </body>
 

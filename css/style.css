@@ -380,7 +380,7 @@ footer p {
     height: 100%;
     left: 0;
     top: 0;
-    background:rgba(236, 239, 241, 0.48);
+    /*background:rgba(236, 239, 241, 0.48); */
 }
 
 .home .slide-text {
@@ -470,7 +470,7 @@ footer p {
     height: 100%;
     left: 0;
     top: 0;
-    background:rgba(236, 239, 241, 0.48);
+    /*background:rgba(236, 239, 241, 0.48);*/
 }
 
 .get .slide-text {
@@ -1757,3 +1757,6 @@ background-color: #f9f9f9;
   margin: 0px;  
 }
 
+.tab-content a:hover{
+color:white;
+}

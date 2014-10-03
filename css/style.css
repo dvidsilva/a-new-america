@@ -1760,3 +1760,7 @@ background-color: #f9f9f9;
 .tab-content a:hover{
 color:white;
 }
+
+#portfolio .img-rounded {
+    cursor: pointer;
+}
